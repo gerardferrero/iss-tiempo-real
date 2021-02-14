@@ -20,7 +20,7 @@ while True:
     print(df)
     fig = px.scatter_geo(df, lat='latitude',
                         lon='longitude')
-    #fig.show()
+    
     ply.offline.plot(fig,filename="ISS.html",auto_open=False)
     time.sleep(45)
     
